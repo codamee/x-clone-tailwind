@@ -19,57 +19,57 @@
             <ul class="flex flex-col gap-1">
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">home</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">home</span>
                     <p class="font-bold text-xl">Home</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">explore</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">explore</span>
                     <p class="font-bold text-xl">Explore</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">Notifications</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">Notifications</span>
                     <p class="font-bold text-xl">Notifications</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">person_add</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">person_add</span>
                     <p class="font-bold text-xl">Follow</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">chat</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">chat</span>
                     <p class="font-bold text-xl">Chat</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">robot_2</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">robot_2</span>
                     <p class="font-bold text-xl">Grok</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">bookmarks</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">bookmarks</span>
                     <p class="font-bold text-xl">Bookmarks</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">create</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">create</span>
                     <p class="font-bold text-xl">Creater</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">cards_star</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">cards_star</span>
                     <p class="font-bold text-xl">Premium</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl!">contacts_product</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl!">contacts_product</span>
                     <p class="font-bold text-xl">Profile</p>
                 </li>
                 <li
                     class="flex gap-5 items-center justify-center cursor-pointer hover:bg-gray-800 w-fit py-2 px-4 rounded-4xl">
-                    <span class="material-symbols-outlined text-2xl! ">more</span>
+                    <span class="material-symbols-outlined cursor-pointer text-2xl! ">more</span>
                     <p class="font-bold text-xl">More</p>
                 </li>
                 <button
@@ -77,14 +77,252 @@
             </ul>
             <div
                 class="user flex items-center justify-center gap-3 w-fit py-2 px-4 rounded-4xl hover:bg-gray-800 cursor-pointer">
-                <img src="./Assets/profile.webp" class="w-12 rounded-3xl" alt="home">
+                <img src="./Assets/profile.webp" class="w-10 rounded-3xl" alt="home">
                 <div class="user-name ">
                     <p class="font-bold">Flora</p>
                     <p class="text-[14px] text-gray-400 ">@NovaFlora4576893</p>
                 </div>
             </div>
         </div>
-        <div class="middle w-[170%] border-x border-x-gray-700">Middle</div>
+
+        <div class="middle w-[170%] border-x border-x-gray-700 h-screen overflow-auto">
+            <div class="following flex border-b border-b-gray-700   ">
+                <p
+                    class="w-full h-full flex items-center justify-center cursor-pointer hover:bg-gray-900 font-semibold p-4 border-b border-b-blue-600 ">
+                    For you</p>
+                <p
+                    class="w-full h-full flex items-center justify-center cursor-pointer hover:bg-gray-900 font-semibold p-4">
+                    Following</p>
+            </div>
+            <div class="post p-5 flex flex-col gap-5 border-b border-b-gray-700">
+                <div class="search flex gap-4 items-center ">
+                    <img class="w-10 rounded-3xl" src="Assets/profile.webp" alt="profile">
+                    <input type="text" class="outline-0 border-0 text-xl" placeholder="What's happening?">
+                </div>
+                <div class="icons flex justify-between items-center">
+                    <div class="ml-14 flex gap-5">
+                        <span class="material-symbols-outlined cursor-pointer ">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            gif_box
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            mood
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            flag
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            robot
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            date_range
+                        </span>
+                    </div>
+                    <button class="px-4 py-1 bg-white text-black font-bold rounded-4xl">Post</button>
+                </div>
+            </div>
+            <div class="card p-4 flex flex-col gap-6 border-b border-b-gray-700">
+                <div class="card-profile flex ">
+                    <div>
+                        <img class="w-10 rounded-4xl"
+                            src="https://images.unsplash.com/photo-1654110455429-cf322b40a906?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfDJ8MHx8fDA%3D"
+                            alt="profile">
+                    </div>
+                    <div class="flex flex-col pl-4 pr-36">
+                        <div class="flex gap-1">
+                            <p class="font-semibold">Robert The Builder</p>
+                            <img class="w-5" src="Assets/bluetick.svg" alt="">
+                            <p class="text-gray-400 text-sm">@nobodyMrRobot . 9h</p>
+                        </div>
+                        <div>
+                            Is it genius or what
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+
+                </div>
+                <div class="card-content flex items-center justify-center">
+                    <img class=""
+                        src="https://images.unsplash.com/photo-1498019559366-a1cbd07b5160?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1hZ2ljfGVufDB8MHwwfHx8MA%3D%3D"
+                        alt="unsplah img">
+                </div>
+                <div class="card-stats flex justify-between text-gray-500">
+                    <div class="flex justify-between w-[70%]">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                comment
+                            </span>
+                            <p>240</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                post
+                            </span>
+                            <p>25</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                favorite
+                            </span>
+                            <p>50k</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                leaderboard
+                            </span>
+                            <p>100k</p>
+                        </div>
+
+
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined cursor-pointer">
+                            bookmark
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            share
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-4 flex flex-col gap-6 border-b border-b-gray-700">
+                <div class="card-profile flex ">
+                    <div>
+                        <img class="w-10 rounded-4xl"
+                            src="https://plus.unsplash.com/premium_photo-1739025983001-ff75f5096e23?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                            alt="profile">
+                    </div>
+                    <div class="flex flex-col pl-4 pr-36">
+                        <div class="flex gap-1">
+                            <p class="font-semibold">Graphic & Animation</p>
+                            <img class="w-5" src="Assets/bluetick.svg" alt="">
+                            <p class="text-gray-400 text-sm">@AnimeVerse . 1day</p>
+                        </div>
+                        <div>
+                            Slashing
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+
+                </div>
+                <div class="card-content flex items-center justify-center">
+                    <img class=""
+                        src="https://images.unsplash.com/photo-1697715744014-7ab37c005ba5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFuaW1lfGVufDB8MnwwfHx8MA%3D%3D"
+                        alt="unsplah img">
+                </div>
+                <div class="card-stats flex justify-between text-gray-500">
+                    <div class="flex justify-between w-[70%]">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                comment
+                            </span>
+                            <p>9400</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                post
+                            </span>
+                            <p>5k</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                favorite
+                            </span>
+                            <p>900k</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                leaderboard
+                            </span>
+                            <p>1.1m</p>
+                        </div>
+
+
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined cursor-pointer">
+                            bookmark
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            share
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-4 flex flex-col gap-6 border-b border-b-gray-700">
+                <div class="card-profile flex ">
+                    <div>
+                        <img class="w-10 rounded-4xl"
+                            src="https://images.unsplash.com/photo-1658932447624-152eaf36cf4e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2ZpbGV8ZW58MHwyfDB8fHww"
+                            alt="profile">
+                    </div>
+                    <div class="flex flex-col pl-4 pr-36">
+                        <div class="flex gap-1">
+                            <p class="font-semibold">Johny And Nature</p>
+                            <img class="w-5" src="Assets/bluetick.svg" alt="">
+                            <p class="text-gray-400 text-sm">@johnNature85 . 12h</p>
+                        </div>
+                        <div>
+                            Cool breeze
+                        </div>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        more_horiz
+                    </span>
+
+                </div>
+                <div class="card-content flex items-center justify-center">
+                    <img class=""
+                        src="https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlfGVufDB8MHwwfHx8MA%3D%3D"
+                        alt="unsplah img">
+                </div>
+                <div class="card-stats flex justify-between text-gray-500">
+                    <div class="flex justify-between w-[70%]">
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                comment
+                            </span>
+                            <p>2400</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                post
+                            </span>
+                            <p>450</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                favorite
+                            </span>
+                            <p>90k</p>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                leaderboard
+                            </span>
+                            <p>500k</p>
+                        </div>
+
+
+                    </div>
+                    <div class="flex gap-4">
+                        <span class="material-symbols-outlined cursor-pointer">
+                            bookmark
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer">
+                            share
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="Right w-full px-6 py-4 flex flex-col gap-4">
             <div class="search">
                 <input type="search" name="searchh" id="search" placeholder="search"
@@ -108,7 +346,7 @@
                         <p class="font-bold">#AlluCinemas</p>
                     </div>
                     <span
-                        class="material-symbols-outlined text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
+                        class="material-symbols-outlined cursor-pointer text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="gap-2">
@@ -116,7 +354,7 @@
                         <p class="font-bold">#RighteousCustom</p>
                     </div>
                     <span
-                        class="material-symbols-outlined text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
+                        class="material-symbols-outlined cursor-pointer text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="gap-2">
@@ -124,7 +362,7 @@
                         <p class="font-bold">#BoycottSrh</p>
                     </div>
                     <span
-                        class="material-symbols-outlined text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
+                        class="material-symbols-outlined cursor-pointer text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="gap-2">
@@ -132,7 +370,7 @@
                         <p class="font-bold">#LpgGasShortage</p>
                     </div>
                     <span
-                        class="material-symbols-outlined text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
+                        class="material-symbols-outlined cursor-pointer text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
                 </div>
                 <div class="flex justify-between items-center">
                     <div class="gap-2">
@@ -140,7 +378,7 @@
                         <p class="font-bold">#outKaro</p>
                     </div>
                     <span
-                        class="material-symbols-outlined text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
+                        class="material-symbols-outlined cursor-pointer text-2xl! cursor-pointer hover:bg-gray-900 flex items-center h-fit p-1 rounded-4xl hover:text-[hsl(204_88%_53%)]">more_horiz</span>
                 </div>
                 <p class="text-[hsl(204_88%_53%)]">show more</p>
             </div>
