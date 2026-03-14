@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="container flex mx-auto w-full lg:w-[80%] ">
+    <div class="flex mx-auto w-full lg:w-[85%]">
         <div class="left md:w-[55%] sm:flex flex-col gap-3 py-3 px-4 hidden ">
             <div class="logo invert w-8">
                 <img src="./Assets/logo.svg" alt="logo">
@@ -96,7 +96,22 @@
             </div>
         </div>
 
-        <div class="middle w-full lg:w-[170%] border-x border-x-gray-700 h-screen overflow-auto">
+        <div class="middle w-full relative lg:w-full border-x border-x-gray-700 h-dvh overflow-auto">
+            <div class="fixed bottom-0 w-full sm:hidden bg-black py-4 px-10 m-0 flex justify-between items-center">
+                <span class="material-symbols-outlined cursor-pointer text-3xl!">
+                    home
+                </span>
+                <span class="material-symbols-outlined cursor-pointer text-3xl!">
+                    search
+                </span>
+                <span class="material-symbols-outlined cursor-pointer text-3xl!">
+                    robot
+                </span>
+                <span class="material-symbols-outlined cursor-pointer text-3xl!">
+                    Notifications
+                </span>
+                <img src="./Assets/profile.webp" class="w-10 rounded-4xl" alt="">
+            </div>
             <div class="following flex border-b border-b-gray-700   ">
                 <p
                     class="w-full h-full flex items-center justify-center cursor-pointer hover:bg-gray-900 font-semibold p-4 border-b border-b-blue-600 ">
@@ -107,7 +122,7 @@
             </div>
             <div class="post p-5 flex flex-col gap-5 border-b border-b-gray-700">
                 <div class="search flex gap-4 items-center ">
-                    <img class="w-10 rounded-3xl" src="Assets/profile.webp" alt="profile">
+                    <img class="w-10 rounded-3xl hidden sm:block" src="Assets/profile.webp" alt="profile">
                     <input type="text" class="outline-0 border-0 text-xl" placeholder="What's happening?">
                 </div>
                 <div class="icons flex justify-between items-center">
@@ -334,7 +349,7 @@
             </div>
         </div>
 
-        <div class="Right w-full px-6 py-4 hidden xl:flex flex-col gap-4 ">
+        <div class="Right w-[70%] px-6 py-4 hidden xl:flex flex-col gap-4 ">
             <div class="search">
                 <input type="search" name="searchh" id="search" placeholder="search"
                     class="px-4 py-2 rounded-4xl border-2 border-gray-600 w-full outline-0 focus:border-cyan-500">
