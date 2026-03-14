@@ -621,6 +621,11 @@
       font-size: 10px;
     }
   }
+  .max-sm\:text-\[11px\] {
+    @media (width < 40rem) {
+      font-size: 11px;
+    }
+  }
   .max-sm\:text-\[12px\] {
     @media (width < 40rem) {
       font-size: 12px;
