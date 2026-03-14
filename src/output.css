@@ -591,6 +591,11 @@
       border-color: var(--color-cyan-500);
     }
   }
+  .sm\:ml-14 {
+    @media (width >= 40rem) {
+      margin-left: calc(var(--spacing) * 14);
+    }
+  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
